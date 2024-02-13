@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="css/theme.min.css">
+    <title>Home - Vallejo Public Library</title>
+</head>
+<body>
+<header>
+    <nav class="menu">
+        <ul class="menu-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link fw-medium active" href="catalog.html">Book Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Book Catalog</h1>
+    <div id="search-container" class="search-container">
+        <input class="form-control rounded-pill font-base" type="text" id="search-input" placeholder="Search...">
+        <select class="form-control rounded-pill font-base" id="category-filter">
+            <option value="">All Categories</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+        </select>
+        <button class="btn btn-lg btn-primary" onclick="filterBooks()">Apply Filter</button>
+    </div>
+    <!-- List of Books -->
+    <ul id="book-list"></ul>
+</main>
+
+<footer>
+    <p>&copy; 2024 Vallejo Public Library. All rights reserved.</p>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>
