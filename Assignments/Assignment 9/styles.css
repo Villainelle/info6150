@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2e5ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+h1 {
+    color: #5D3FD3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="checkbox"],
+select,
+button {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    align-self: start;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    background: #e5d7f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #5D3FD3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4c2fbf;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
